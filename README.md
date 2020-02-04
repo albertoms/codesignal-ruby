@@ -11,5 +11,6 @@ I used Visual Studio Code to solve the challenges using the TDD approach. For ea
 I'm using Bundler as the package manager, which takes care of the required gems for the test file. This is how I run a specific test:
 
 ```
-> bundle exec ruby test/arcade/intro/the_journey_begins_test.rb
+> rake test
 ```
+*See Rakefile.*
