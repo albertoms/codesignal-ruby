@@ -2,6 +2,10 @@ require 'rake/testtask'
 
 Rake::TestTask.new do |t| 
   t.libs << "test"
-  t.test_files = FileList["test/arcade/intro/test*.rb"]
-  t.verbose = true 
+  t.test_files = FileList["test/**/test*.rb"]
+  t.verbose = false
+  t.warning = true
 end
+desc "Run tests"
+
+task default: :test
